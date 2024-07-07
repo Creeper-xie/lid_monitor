@@ -92,7 +92,7 @@ static void handle_switch_event(struct libinput_event *ev) {
 
 // Receive events from given libinput context. Call other function to handle
 // diffencent types of events.
-void handle_events(struct libinput *li) {
+static void handle_events(struct libinput *li) {
     struct libinput_event *ev;
 
     libinput_dispatch(li);
